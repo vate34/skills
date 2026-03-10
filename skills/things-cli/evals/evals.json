@@ -1,0 +1,35 @@
+{
+  "skill_name": "things-cli",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "在 Things 里创建一个待办事项：购买牛奶，添加到购物清单，标签是杂货",
+      "expected_output": "生成 things:///add URL，包含 title=购买牛奶, list=购物, tags=杂货",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我打开 Things 的 Today 视图",
+      "expected_output": "生成 things:///show?id=today URL",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "把 ID 为 abc123 的待办标记为完成",
+      "expected_output": "生成 things:///update URL，包含 id=abc123, completed=true",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "在 Things 里创建一个项目叫'准备年会'，截止日期是 2026-12-31，添加到工作区",
+      "expected_output": "生成 things:///add-project URL，包含 title=准备年会, deadline=2026-12-31, area=工作区",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "在 Things 搜索包含'会议'的待办",
+      "expected_output": "生成 things:///search?query=会议 URL",
+      "files": []
+    }
+  ]
+}
