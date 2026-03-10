@@ -11,7 +11,7 @@ These skills follow the [Agent Skills specification](https://agentskills.io/spec
 Clone the repo into the OpenCode skills directory:
 
 ```sh
-git clone https://github.com/vate34/things-skills.git ~/.opencode/skills/things-skills
+git clone https://github.com/vate34/skills.git ~/.opencode/skills/skills
 ```
 
 OpenCode auto-discovers all `SKILL.md` files under `~/.opencode/skills/`.
