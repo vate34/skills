@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "shows_used_quota: 输出包含"已用额度"或类似表述",
+      "passed": true,
+      "evidence": "Line 5: '已用额度 | 11% (剩余 1333/1500 次调用)'"
+    },
+    {
+      "text": "shows_weekly_quota: 输出包含"周限额"及百分比",
+      "passed": true,
+      "evidence": "Line 6: '周限额 | 1% (剩余 254/15000)，重置时间：3 天 2 小时后'"
+    },
+    {
+      "text": "shows_reset_time: 输出包含重置时间相关信息",
+      "passed": true,
+      "evidence": "Line 6: '重置时间：3 天 2 小时后' and Line 7: '2 小时 44 分钟后重置'"
+    },
+    {
+      "text": "shows_token_stats: 输出包含昨日、近7天、当月消耗",
+      "passed": true,
+      "evidence": "Lines 13-15: '昨日 | 7.1万', '近7天 | 64.6万', '当月 | 548.6万'"
+    },
+    {
+      "text": "hides_model_quotas: 输出不包含"所有模型额度"或各模型详情",
+      "passed": true,
+      "evidence": "No occurrence of '所有模型额度' or per-model quota details in the output"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

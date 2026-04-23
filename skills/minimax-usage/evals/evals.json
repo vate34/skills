@@ -1,0 +1,23 @@
+{
+  "skill_name": "minimax-usage",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我看看 minimax 的使用情况",
+      "expected_output": "显示已用额度、周限额、重置时间、Token消耗统计，不显示模型额度",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我的 minimax 还有多少额度？",
+      "expected_output": "显示已用额度、周限额、重置时间、Token消耗统计，不显示模型额度",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "minimax 用量怎么样，这个月花了多少 token",
+      "expected_output": "显示已用额度、周限额、重置时间、Token消耗统计（含当月消耗），不显示模型额度",
+      "files": []
+    }
+  ]
+}

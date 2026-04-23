@@ -1,0 +1,6 @@
+{
+  "eval_id": 0,
+  "eval_name": "check-minimax-usage",
+  "prompt": "帮我看看 minimax 的使用情况",
+  "assertions": []
+}

@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "query-monthly-usage",
+  "prompt": "minimax 用量怎么样，这个月花了多少 token",
+  "assertions": []
+}

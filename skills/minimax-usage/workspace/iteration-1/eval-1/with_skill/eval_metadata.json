@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "query-quota",
+  "prompt": "我的 minimax 还有多少额度？",
+  "assertions": []
+}

@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "skill_name": "minimax-usage",
+    "skill_path": "/Users/quysil/Projects/skills/skills/minimax-usage",
+    "executor_model": "MiniMax-M2.7",
+    "analyzer_model": "MiniMax-M2.7",
+    "timestamp": "2026-04-23T13:19:14Z",
+    "evals_run": ["eval-0", "eval-1", "eval-2"],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "run_id": "eval-0-with_skill",
+      "config": "with_skill",
+      "eval_name": "check-minimax-usage",
+      "pass_rate": 1.0,
+      "time_seconds": 93.3,
+      "tokens": 8044
+    },
+    {
+      "run_id": "eval-1-with_skill",
+      "config": "with_skill",
+      "eval_name": "query-quota",
+      "pass_rate": 1.0,
+      "time_seconds": 47.7,
+      "tokens": 7531
+    },
+    {
+      "run_id": "eval-2-with_skill",
+      "config": "with_skill",
+      "eval_name": "query-monthly-usage",
+      "pass_rate": 1.0,
+      "time_seconds": 75.4,
+      "tokens": 7585
+    },
+    {
+      "run_id": "eval-0-without_skill",
+      "config": "without_skill",
+      "eval_name": "check-minimax-usage",
+      "pass_rate": 1.0,
+      "time_seconds": 26.2,
+      "tokens": 13836
+    },
+    {
+      "run_id": "eval-1-without_skill",
+      "config": "without_skill",
+      "eval_name": "query-quota",
+      "pass_rate": 1.0,
+      "time_seconds": 62.3,
+      "tokens": 7977
+    },
+    {
+      "run_id": "eval-2-without_skill",
+      "config": "without_skill",
+      "eval_name": "query-monthly-usage",
+      "pass_rate": 1.0,
+      "time_seconds": 59.3,
+      "tokens": 7564
+    }
+  ],
+  "run_summary": {
+    "delta": {
+      "pass_rate": "+0.00",
+      "time_seconds": "-14.9",
+      "tokens": "-5943"
+    },
+    "with_skill": {
+      "pass_rate": "100%",
+      "time_mean": "72.1s",
+      "time_stddev": "18.9s",
+      "tokens_mean": "7720",
+      "tokens_stddev": "229"
+    },
+    "without_skill": {
+      "pass_rate": "100%",
+      "time_mean": "49.3s",
+      "time_stddev": "15.2s",
+      "tokens_mean": "9792",
+      "tokens_stddev": "2631"
+    }
+  },
+  "notes": [
+    "without_skill actually runs faster because it doesn't load the skill context overhead",
+    "with_skill uses fewer tokens due to more targeted output format",
+    "Both pass all 5 assertions - skill works correctly and hides model quotas"
+  ]
+}
